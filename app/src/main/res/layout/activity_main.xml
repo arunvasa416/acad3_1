@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="200px"
+    android:background="#f4b042"
+    tools:context="com.example.hello.acad3_1.MainActivity">
+
+    <TextView
+        android:id="@+id/lbl_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search Tool"
+        android:layout_centerHorizontal="true"
+        android:textSize="40dp"
+        android:textAllCaps="true"/>
+    <EditText
+        android:id="@+id/searchtxt"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_below="@id/lbl_search"
+        android:background="#FFFFFF"
+        android:hint="Enter Text"
+        android:gravity="center"
+        android:textSize="30dp"/>
+    <Button
+        android:id="@+id/Serchbtn"
+        android:layout_width="match_parent"
+        android:layout_height="150px"
+        android:layout_below="@id/searchtxt"
+        android:text="Search"
+        android:textSize="20dp"
+        android:onClick="openSeach"
+        />
+</RelativeLayout>
